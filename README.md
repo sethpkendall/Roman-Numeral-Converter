@@ -8,6 +8,10 @@
 Example Input: hey
 Example Output:
 
+* Roman numeral notation covers only positive integers from 1 to 3999
+Example Input: 4000
+Example Output: "Error: Invalid Number"
+
 * In Roman numeral notation symbols are correlated to point values.
 Example Input: 1
 Example Output: I
