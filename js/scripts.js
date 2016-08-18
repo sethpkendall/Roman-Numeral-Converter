@@ -10,8 +10,38 @@ var validNumber = function(x) {
 }
 
 var conversion = function(number) {
-  if
-});
+  var numLength = number.length;
+  var result = "";
+  if (numLength===1) {
+    if (number==="1") {
+      result +="I";
+    } else if (number==="2"){
+      result +="II";
+    } else if (number==="3"){
+      result +="III";
+    } else if (number==="4"){
+      result +="IV";
+    } else if (number==="5"){
+      result +="V";
+    } else if (number==="6"){
+      result +="VI";
+    } else if (number==="7"){
+      result +="VII";
+    } else if (number==="8"){
+      result +="VIII";
+    } else if (number==="9"){
+      result +="IX";
+  // } else if (numLength===2) {
+  //
+  // } else if (numLength===3) {
+  //
+  // } else if (numLength===4) {
+
+    } else {
+    }
+  }
+  return(result);
+}
 
 $(document).ready(function(){
   $("form#input").submit(function(event){
@@ -25,7 +55,7 @@ $(document).ready(function(){
 
   $("form#input").submit(function(event){
     event.preventDefault();
-    number = parseInt($("input#number").val());
+    number = $("input#number").val() ;
     validNumber(number);
     var output = conversion(number);
     $("#conversion").text(output);
