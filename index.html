@@ -5,9 +5,22 @@
     <link rel="stylesheet" href="css/styles.css" media="screen" title="no title" charset="utf-8">
     <script src="js/jquery-3.1.0.js"></script>
     <script src="js/scripts.js"></script>
-    <title></title>
+    <title>Roman Numeral Converter</title>
   </head>
   <body>
-    <h1></h1>
+    <div class="container">
+      <h1>Roman Numeral Converter</h1>
+      <div id="input">
+        <form>
+          <label for="number">Enter a number:</label>
+          <input id="number" class="form-control" type="number" required="required">
+          <button type="submit" class="btn" id="submit">Submit</button>
+          <button type="reset" class="btn" id="reset">Reset</button>
+        </form>
+      </div>
+      <div id="output">
+        <p><span id="conversion"></span></p>
+      </div>
+    </div>
   </body>
 </html>
