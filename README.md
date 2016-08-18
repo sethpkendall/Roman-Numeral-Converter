@@ -13,10 +13,7 @@ Example Input: 4000
 Example Output: "Error: Invalid Number"
 
 * In Roman numeral notation symbols are correlated to point values.
-Example Input: 1
-Example Output: I
-
-* The symbol/value pairings are as follows:
+  The symbol/value pairings are as follows:
   * I = 1
   * V = 5
   * X = 10
@@ -24,8 +21,12 @@ Example Output: I
   * C = 100
   * D = 500
   * M = 1000
-Example Input: 10
-Example Output: X
+Example Input: 1
+Example Output: I
+
+* Ones, tens, hundreds and thousands must be kept separate from one another.
+Example Input: 99
+Example Output: XCIX (not IC)
 
 * The value of a roman numeral expression is calculated by summing the values of all its component numerals.
 Example Input: 16
@@ -34,10 +35,6 @@ Example Output: XVI
 * No more than 3 consecutive instances of the same character are allowed. When a fourth character of the same type is added the program places 1 instance of the character to the left of the next character tier up. In this, and only this case, value is calculated by subtracting the value of the smaller numeral from the larger.
 Example Input: 19
 Example Output: XIX
-
-* Ones, tens, hundreds and thousands must be kept separate from one another.
-Example Input: 99
-Example Output: XCIX (not IC)
 
 ## Setup/Installation Requirements
 
